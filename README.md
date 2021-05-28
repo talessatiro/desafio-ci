@@ -9,6 +9,6 @@ Desafio Full Cycle de Integração Contínua (CI) usando o [Nest](https://github
 - Crie uma pipeline de CI utilizando o Github actions que:
   - [x] Instale a aplicação
   - [x] Execute os testes
-  - [ ] Execute o SonarCloud
-- [ ] No Github, ative o status check para que seja possível dar o merge apenas se a aplicação passar na pipeline de CI e também se a aplicação passar no quality gate do SonarCloud.
-- [ ] Crie uma Pull Request (PR) realizando todo o processo.
+  - [x] Execute o SonarCloud
+- [x] No Github, ative o status check para que seja possível dar o merge apenas se a aplicação passar na pipeline de CI e também se a aplicação passar no quality gate do SonarCloud.
+- [x] Crie uma Pull Request (PR) realizando todo o processo.
