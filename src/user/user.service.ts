@@ -5,14 +5,12 @@ import { UserDTO } from './dto/user.dto';
 export class UserService {
     private users: UserDTO[] = [];
 
-    constructor() { }
-
     listUsers(): UserDTO[] {
         return this.users;
     }
 
     getUser(id: string): UserDTO {
-        const user = this.users.find((user: UserDTO) => user.id === id);
+        const user = this.users.find((userDTO: UserDTO) => userDTO.id === id);
 
         if (!user) {
             throw new NotFoundException(`User with id ${id} not found`);
@@ -38,7 +36,7 @@ export class UserService {
     }
 
     removeUser(id: string): void {
-        const user = this.users.find((user: UserDTO) => user.id === id);
+        const user = this.users.find((userDTO: UserDTO) => userDTO.id === id);
 
         if (!user) {
             throw new ConflictException(`The user with id ${id} already was removed`);
